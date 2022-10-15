@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: rgb(186, 198, 214);
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(122, 110, 228);
+    min-width: 300px;
+    padding: 20px;
+}
+
+input{
+    border: 1px solid purple;
+}

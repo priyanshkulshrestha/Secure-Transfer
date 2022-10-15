@@ -1,0 +1,29 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Transfer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <% if(locals.fileLink != null) { %>
+        <div style="margin-bottom: 1rem;">
+            your file is uploaded: 
+            <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
+        </div>
+    <% } %> 
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file" required>
+        </div>
+        <div>
+        <label for="Password">Password:</label>
+        <input type="password" id="password" name="password" >
+        </div>
+        <button type="submit">Share</button>
+    </form>
+</body>
+</html>
