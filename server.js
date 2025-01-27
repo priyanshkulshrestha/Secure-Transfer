@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
-app.post("/upload", upload.single("file"), async (req, res) => {
+app.post("/oknow", upload.single("file"), async (req, res) => {
     const fileData = {
         path: req.file.path,
         orignalName: req.file.originalname
